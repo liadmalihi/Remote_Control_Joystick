@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Remote_Control_Joystick</string>
+    <string name="enter_ip_address">ENTER IP ADDRESS</string>
+    <string name="enter_port_number">ENTER PORT NUMBER</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="rudder">Rudder</string>
+    <string name="thruttle">Thruttle</string>
+</resources>

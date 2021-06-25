@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.remote_control_joystick.view_model.ViewModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/d"
+        tools:context=".view.MainActivity">
+
+
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="397dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/enter_ip_address"
+            android:inputType="text"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005"
+            app:layout_constraintWidth_percent="0.7" />
+
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="397dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/enter_port_number"
+            android:inputType="text"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ip"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="197dp"
+            android:layout_height="83dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="@string/connect"
+            android:textColor="@color/purple_200"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.186" />
+
+        <SeekBar
+            android:id="@+id/rudder"
+            android:layout_width="376dp"
+            android:layout_height="65dp"
+            android:max="100"
+            android:min="-100"
+            android:progressDrawable="@color/black"
+            android:onProgressChanged="@{viewmodel.onSeekBarChangeR}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <SeekBar
+            android:id="@+id/throttle"
+            android:layout_width="340dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="204dp"
+            android:layout_marginRight="204dp"
+            android:max="100"
+            android:min="0"
+            android:progressDrawable="@color/black"
+            android:onProgressChanged="@{viewmodel.onSeekBarChangeT}"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.583" />
+
+        <com.example.remote_control_joystick.view.JoyStick
+            android:id="@+id/joyStick"
+            android:layout_width="317dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.829"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.799" />
+
+        <Button
+            android:id="@+id/dis_connect"
+            android:layout_width="184dp"
+            android:layout_height="83dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="@string/disconnect"
+            android:textColor="@color/purple_200"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.187" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="149dp"
+            android:layout_height="38dp"
+            android:background="#1BFFFFFF"
+            android:text="@string/rudder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.683"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="98dp"
+            android:layout_height="47dp"
+            android:rotation="90"
+            android:text="@string/thruttle"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
