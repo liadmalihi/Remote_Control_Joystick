@@ -5,17 +5,17 @@ The app controls the flight of an airplane from the simulator.
 
 *Collaborators*:
 
-The program was developed by four computer science students at Bar Ilan University, Israel - Liad Malihi and Yeheli Frangi.
+The program was developed by two computer science students at Bar Ilan University, Israel - Liad Malihi and Yeheli Frangi.
 
 *General Description*:
 
-The program connects to the [flight simulator](https://www.flightgear.org/) as a client, and control the airplane values and כlies the plane according to values,
+The program connects to the [flight simulator](https://www.flightgear.org/) as a client, and control the airplane values and flies the plane according to values,
 such as: Throttle, Elevator, Aileron and Rudder
 The program connects to the simulator with ip and port.
 
 *Code Degins*:
 
-The FlightInseptionApp programmed with the MVVM design using data binding of the Kotlin language, and xml.
+The Remote Control JoyStick programmed with the MVVM design using data binding of the Kotlin language, and xml.
 You can see the division between the view ,the viewModel and the model of the whole program.
 
 *Features*:
@@ -28,7 +28,7 @@ You can use the slider to control the flight rudder.
 * Joy Stick:
 You can control the joy stick movment of the plane dring the flight and control the Aileron and Elevator values according to the joyStick.
 
-???????????????????????????????*Structure project*:
+*Structure project*:
 
 In the main window you can see the View,ViewModel and Model files of the app when you get into - app/src/main/java/com/example/remot_control_joystoick.
 
