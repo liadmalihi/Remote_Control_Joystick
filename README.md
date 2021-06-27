@@ -1,4 +1,4 @@
-# Remote_Control_JoyStick - Android App
+# Remote Control JoyStick - Android App
 
 This is an app which connects to the external software named FlightGear simulator.
 The app controls the flight of an airplane from the simulator.
