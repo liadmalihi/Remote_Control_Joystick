@@ -53,7 +53,7 @@ Documentation:
 
 You can see in the UML the MVVM architecture.
 
-You can see the Data Binding and the Property Changed connection in the UML.
+You can see the Data Binding connection in the UML.
 
 ![Image of UML](https://github.com/liadmalihi/Remote_Control_Joystick/blob/master/UML.jpg)
 
