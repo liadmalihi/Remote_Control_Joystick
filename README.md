@@ -50,8 +50,13 @@ Also you can see the UML of the hole project.
 * Enjoy the flight!
 
 Documentation:
-![Image of UML](https://github.com/liadmalihi/Remote_Control_Joystick/blob/master/UML.jpg)
+
 You can see in the UML the MVVM architecture.
+
 You can see the Data Binding and the Property Changed connection in the UML.
+
+![Image of UML](https://github.com/liadmalihi/Remote_Control_Joystick/blob/master/UML.jpg)
+
 [Demo of the app running and explanation about the structure of the project](https://www.youtube.com/watch?v=ZHujSPWrEzo)
+
 Enjoy!
