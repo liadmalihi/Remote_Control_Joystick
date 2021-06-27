@@ -30,17 +30,12 @@ You can control the joy stick movment of the plane dring the flight and control 
 
 ???????????????????????????????*Structure project*:
 
-In the main window you can see all the code's files for the app.
+In the main window you can see the View,ViewModel and Model files of the app when you get into - app/src/main/java/com/example/remot_control_joystoick.
+
+In the main window you can see the main xaml of the app when you get into - app/src/main/res/layout.
 
 Also you can see the UML of the hole project.
 
-In the Images folder you have all the feature to run the app.
-
-In the dll folder you have the algorithms for the dll.
-
-In the files folder you have the xml and csv files to upload in the app.
-
-In the packages folder there is the Oxplot libary - download it to your project.
 
 *How to run the app?*:
 * Download the FlightGear app from [here](https://www.flightgear.org/) and open the app.
@@ -48,15 +43,15 @@ In the packages folder there is the Oxplot libary - download it to your project.
 
 --telnet=socket,in,10,127.0.0.1,6400,tcp
 
-???????????* Download [this project](https://github.com/ashira-major/FlightDetection) using git clone.
+* Download [this project](https://github.com/liadmalihi/Remote_Control_Joystick) using git clone.
 * Make sure you have the Android Studio in your computer.
 * start the simulator
 * Run the program and follow the instructions to type your PC's IP address and 6400 as a port number.
 * Enjoy the flight!
 
 Documentation:
-?????????![Image of UML](https://github.com/ashira-major/FlightDetection/blob/master/UML.jpg)
+![Image of UML](https://github.com/liadmalihi/Remote_Control_Joystick/blob/master/UML.jpg)
 You can see in the UML the MVVM architecture.
 You can see the Data Binding and the Property Changed connection in the UML.
-?????[Demo of the app running and explanation about the structure of the project](https://youtu.be/AGYCmEJU_LM)
+[Demo of the app running and explanation about the structure of the project](https://www.youtube.com/watch?v=ZHujSPWrEzo)
 Enjoy!
